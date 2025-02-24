@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <link rel="stylesheet" href="./assert/style.css" />
+  </head>
+  <body>
+    <section id="header-top">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-6">
+            <div class="left">
+              <a href="#" style="margin-right: 10px">
+                <i class="fa-solid fa-phone-volume"></i>
+                <span>+33 321-654-987</span>
+              </a>
+              <a href="#">
+                <i class="fa-solid fa-envelope"></i>
+                <span>Booking@example.com</span>
+              </a>
+            </div>
+          </div>
+          <div class="col-12 col-md-6">
+            <div class="right">
+              <a href="#" class="header-right-eng">
+                <img src="./assert/image/image.svg" height="14" alt="" />
+                <span>English</span>
+                <i class="fa-solid fa-angle-down"></i>
+              </a>
+              <a href="#">
+                <span>USD</span>
+                <i class="fa-solid fa-angle-down"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="header-bottom">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <header class="navbar">
+              <div>
+                <a href="">
+                  <img
+                    src="./assert/image/logo.png"
+                    alt=""
+                    style="width: 191px"
+                  />
+                </a>
+              </div>
+
+              <nav>
+                <ul class="nav-links">
+                  <li class="dropdown">
+                    <a href="index.html" class="dropbtn"
+                      >Home <i class="fas fa-chevron-down"></i
+                    ></a>
+                    <ul class="dropdown-content">
+                      <li><a href="index.html">Home 1</a></li>
+                      <li><a href="home-2.html">Home 2</a></li>
+                      <li><a href="home-3.html">Home 3</a></li>
+                    </ul>
+                  </li>
+
+                  <li class="dropdown">
+                    <a href="destinations-1.html" class="dropbtn"
+                      >Destinations <i class="fas fa-chevron-down"></i
+                    ></a>
+                    <ul class="dropdown-content">
+                      <li>
+                        <a href="destinations-1.html">Destinations 1</a>
+                      </li>
+                      <li>
+                        <a href="destinations-2.html">Destinations 2</a>
+                      </li>
+                      <li>
+                        <a href="destinations-3.html">Destinations 3</a>
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li class="dropdown">
+                    <a href="tour-packages-1.html" class="dropbtn"
+                      >Moliva Tours <i class="fas fa-chevron-down"></i
+                    ></a>
+                    <ul class="dropdown-content">
+                      <li>
+                        <a href="tour-packages-1.html">Tour Package 1</a>
+                      </li>
+                      <li>
+                        <a href="tour-packages-2.html">Tour Package 2</a>
+                      </li>
+                      <li>
+                        <a href="tour-packages-3.html">Tour Package 3</a>
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li class="dropdown">
+                    <a href="post-list-1.html" class="dropbtn"
+                      >Travel Insight <i class="fas fa-chevron-down"></i
+                    ></a>
+                    <ul class="dropdown-content">
+                      <li><a href="post-list.html">Post List</a></li>
+                      <li><a href="single-post.html">Single Post</a></li>
+                    </ul>
+                  </li>
+
+                  <li class="dropdown">
+                    <a href="#" class="dropbtn"
+                      >Pages <i class="fas fa-chevron-down"></i
+                    ></a>
+                    <ul class="dropdown-content">
+                      <li><a href="about.html">About</a></li>
+                      <li><a href="contact.html">Contact</a></li>
+                      <li><a href="coming-soon.html">Coming Soon</a></li>
+                      <li><a href="404.html">404 Page</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </nav>
+
+              <div class="icons">
+                <a href="shopping-cart.html" class="icon"
+                  ><i class="fas fa-shopping-cart"></i><span>3</span></a
+                >
+                <a href="wishlist.html" class="icon"
+                  ><i class="fas fa-heart"></i><span>5</span></a
+                >
+              </div>
+
+              <div class="mobile-menu" onclick="toggleMenu()">
+                <i class="fas fa-bars"></i>
+              </div>
+            </header>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="slider_container">
+      <div class="swiper card_slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="img_box">
+              <img src="./assert/image/h1@2x.jpg" alt="" />
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="img_box">
+              <img src="./assert/image/h2@2x.jpg" alt="" />
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="img_box">
+              <img src="./assert/image/h3@2x.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+    <div class="overlay"></div>
+    <div class="content">
+      <h4>EXPLORE MOLIVA</h4>
+      <h1>
+        Explore majestic <br />
+        mountain ranges
+      </h1>
+      <button class="explore-btn">EXPLORE →</button>
+      <div class="play-button">▶</div>
+    </div>
+    <div class="search-box">
+      <input type="text" placeholder="Where are you going?" />
+      <input type="date" />
+      <select>
+        <option>All categories</option>
+      </select>
+      <button class="search-btn">🔍 SEARCH</button>
+    </div>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".card_slider", {
+        loop: true,
+        cssMode: true,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true, // Allows clicking on pagination dots
+        },
+        autoplay: {
+          delay: 2500, // Auto-slide every 2.5 seconds
+          disableOnInteraction: false, // Keeps autoplay running even after user interaction
+        },
+        keyboard: {
+          enabled: true, // Enables keyboard navigation
+        },
+        mousewheel: {
+          invert: false, // Allows scrolling with mousewheel
+        },
+      });
+    </script>
+  </body>
+</html>
