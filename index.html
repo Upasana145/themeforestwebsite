@@ -162,41 +162,107 @@
             <div class="img_box">
               <img src="./assert/image/h1@2x.jpg" alt="" />
             </div>
+            <div class="content">
+              <h4>EXPLORE MOLIVA</h4>
+              <h1>
+                Explore majestic <br />
+                mountain ranges
+              </h1>
+              <button class="explore-btn">EXPLORE →</button>
+              <div class="play-button">▶</div>
+            </div>
+            <!-- <div class="search-box">
+              <div>
+                <input placeholder="Where are you going ?" />
+              </div>
+              <div>
+                <input type="date" />
+              </div>
+              <div>
+                <input type="date" />
+              </div>
+              <div>
+                <input type="date" />
+              </div>
+
+              <input type="text" placeholder="Where are you going?" />
+              <input type="date" />
+              <select>
+                <option>All categories</option>
+              </select>
+              <button class="search-btn">🔍 SEARCH</button>
+            </div> -->
+
+            <div class="search-container">
+              <div class="search-box">
+                <div class="input-group">
+                  <i class="fas fa-map-marker-alt"></i>
+                  <input type="text" placeholder="Where are you going?" />
+                </div>
+
+                <div class="input-group">
+                  <i class="fas fa-calendar-alt"></i>
+                  <select>
+                    <option selected disabled>Tour date</option>
+                    <option>Today</option>
+                    <option>Tomorrow</option>
+                    <option>Next Week</option>
+                  </select>
+                </div>
+
+                <div class="input-group">
+                  <i class="fas fa-list"></i>
+                  <select>
+                    <option selected>All categories</option>
+                    <option>Adventure</option>
+                    <option>Beach</option>
+                    <option>Hiking</option>
+                  </select>
+                </div>
+
+                <button class="search-btn">
+                  <i class="fas fa-search"></i> SEARCH
+                </button>
+              </div>
+            </div>
           </div>
           <div class="swiper-slide">
             <div class="img_box">
               <img src="./assert/image/h2@2x.jpg" alt="" />
             </div>
+            <div class="content">
+              <h4>EXPLORE MOLIVA</h4>
+              <h1>
+                Experience the unique <br />
+                local culture
+              </h1>
+              <button class="explore-btn">EXPLORE →</button>
+              <div class="play-button">▶</div>
+            </div>
           </div>
+
           <div class="swiper-slide">
             <div class="img_box">
               <img src="./assert/image/h3@2x.jpg" alt="" />
             </div>
+            <div class="content">
+              <h4>EXPLORE MOLIVA</h4>
+              <h1>
+                Enjoy the beautiful and <br />
+                romantic nature
+              </h1>
+              <button class="explore-btn">EXPLORE →</button>
+              <div class="play-button">▶</div>
+            </div>
           </div>
         </div>
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next right-swip"></div>
+        <div class="swiper-button-prev left-swip"></div>
         <div class="swiper-pagination"></div>
       </div>
     </section>
     <div class="overlay"></div>
-    <div class="content">
-      <h4>EXPLORE MOLIVA</h4>
-      <h1>
-        Explore majestic <br />
-        mountain ranges
-      </h1>
-      <button class="explore-btn">EXPLORE →</button>
-      <div class="play-button">▶</div>
-    </div>
-    <div class="search-box">
-      <input type="text" placeholder="Where are you going?" />
-      <input type="date" />
-      <select>
-        <option>All categories</option>
-      </select>
-      <button class="search-btn">🔍 SEARCH</button>
-    </div>
+
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <!-- Initialize Swiper -->
@@ -212,10 +278,10 @@
           el: ".swiper-pagination",
           clickable: true, // Allows clicking on pagination dots
         },
-        autoplay: {
-          delay: 2500, // Auto-slide every 2.5 seconds
-          disableOnInteraction: false, // Keeps autoplay running even after user interaction
-        },
+        // autoplay: {
+        //   delay: 2500, // Auto-slide every 2.5 seconds
+        //   disableOnInteraction: false, // Keeps autoplay running even after user interaction
+        // },
         keyboard: {
           enabled: true, // Enables keyboard navigation
         },

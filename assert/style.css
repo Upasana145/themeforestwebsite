@@ -40,6 +40,7 @@
 }
 .header-bottom{
     padding: 21px;
+  
 }
 
 
@@ -93,10 +94,12 @@ body {
     display: none;
     position: absolute;
     background: white;
+    z-index: 1000;
     top: 40px;
     left: 0;
     min-width: 150px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
 }
 
 .dropdown-content li {
@@ -119,24 +122,34 @@ body {
 }
 
 .icon {
+    height: 50px;
+    width: 50px;
     position: relative;
     font-size: 18px;
     color: #333;
     text-decoration: none;
     padding: 10px;
     background: #ebe7e7;
-    border-radius: 21px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .icon span {
     position: absolute;
-    top: -5px;
+    height: 20px;
+    width: 20px;
+    top: -4px;
     right: -8px;
     background: #6cb015;
     color: white;
     font-size: 12px;
     border-radius: 50%;
     padding: 3px 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .mobile-menu {
@@ -186,33 +199,44 @@ body {
   } */
   .img_box img {
     width: 100%;
-    height: auto;
+    height: 430px;
     /* max-width: 200px; */
   }
   .overlay {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
+    /* width: 100%; */
     height: 100%;
     background: rgba(0, 0, 0, 0.5);
 }
 .content {
     position: absolute;
-    top: 50%;
-    left: 50%;
+    top: 40%;
+    left: 25%;
     transform: translate(-50%, -50%);
     z-index: 1;
+    color: white;
+}
+.content h1{
+        font-size: 3rem;
+        font-weight: 600;
 }
 .explore-btn {
     background: transparent;
-    border: 2px solid white;
-    padding: 10px 20px;
+    border: 1px solid white;
+    padding: 10px 60px;
     cursor: pointer;
     color: white;
     font-size: 16px;
+    border-radius: 6px;
+    margin-top: 15px;
 }
 .play-button {
+ 
+    position: absolute;
+    top: 156px;
+    left: 258px;
     margin-top: 20px;
     width: 50px;
     height: 50px;
@@ -226,8 +250,11 @@ body {
     cursor: pointer;
 }
 .search-box {
+    left: 678px;
     position: absolute;
     bottom: 20px;
+    width: 540px;
+    height: 207px;
     background: white;
     padding: 10px;
     border-radius: 10px;
@@ -247,4 +274,134 @@ body {
     padding: 8px 15px;
     border-radius: 5px;
     cursor: pointer;
+}
+/* .right-swip{
+    color: white;
+    position: absolute;
+    top: 288px;
+    left: 328px;
+}
+.left-swip{
+    left: 80px;
+    position: absolute;
+    top: 288px;
+    color: white;
+} */
+/* Style the navigation buttons */
+.left-swip,
+.right-swip {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100px; /* Length of the line */
+  height: 2px; /* Thickness of the line */
+  background: rgba(255, 255, 255, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  z-index: 10;
+}
+
+/* Position left and right buttons */
+.left-swip {
+    left: 115px;
+    top: 346px;
+}
+
+.right-swip {
+    right: 73%;
+    top: 346px;
+}
+
+.left-swip::before,
+.right-swip::after {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  color: white;
+  font-size: 24px;
+}
+
+.left-swip::before {
+  content: "\f104"; 
+}
+
+.right-swip::after {
+  content: "\f105"; 
+}
+
+
+.left-swip::after,
+.right-swip::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+}
+
+
+/* search bar container */
+/* Search bar container */
+.search-container {
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 800px;
+}
+
+/* Search box */
+.search-box {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* Input group */
+.input-group {
+    display: flex;
+    align-items: center;
+    background: #f0f0f0;
+    border-radius: 8px;
+    padding: 10px;
+    flex: 1;
+}
+
+/* Input field & Select dropdown */
+.input-group input,
+.input-group select {
+    border: none;
+    outline: none;
+    background: transparent;
+    padding-left: 10px;
+    flex: 1;
+    font-size: 16px;
+}
+
+/* Icons */
+.input-group i {
+    color: #666;
+    font-size: 18px;
+}
+
+/* Search button */
+.search-btn {
+    background: #66a80f;
+    color: white;
+    font-size: 16px;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    transition: 0.3s;
+}
+
+.search-btn:hover {
+    background: #4e7f0c;
 }
