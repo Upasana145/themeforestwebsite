@@ -401,43 +401,66 @@ body {
 }
 
 /* Stats Section */
-.stats-section{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    background: white;
-    padding: 30px 20px;
+.stats-section {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: white;
+  padding: 30px 20px;
 }
-.stat-box{
-    display: flex;
-   
+.stat-box {
+  display: flex;
 }
-.stat-box h2{
-    font-weight: 600;
-    margin-right: 15px;
+.stat-box h2 {
+  font-weight: 600;
+  margin-right: 15px;
 }
 
-.moliva-travel-feature{
-display: flex;
-flex-wrap: wrap;
+.moliva-travel-feature {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 49px;
 }
-.moliva-travel-feature-li{
-    width: 50%;
+.moliva-travel-feature li {
+  display: flex;
+  list-style: none;
 }
-.about_moliva{
-    padding: 60px;
+.moliva-travel-feature-li {
+  width: 50%;
 }
-.about_us{
-    color: green;
+.about_moliva {
+  padding: 60px;
 }
-.mol_travel{
-    font-weight: 600;
+.about_us {
+  color: green;
 }
-@media(max-width: 768px){
-.stats-section{
-flex-direction: column;
+.mol_travel {
+  font-weight: 600;
 }
-.stat-box{
-margin-bottom: 20px;
+.read {
+  color: white;
+  text-decoration: none;
+  background-color: #6cb015;
+  border-radius: 11px;
+  padding: 12px 33px;
 }
+.read:hover {
+  color: white;
+  text-decoration: none;
+  background-color: #484a46;
+  border-radius: 11px;
+  padding: 12px 33px;
+}
+.great {
+  font-size: 17px;
+  font-weight: 550;
+}
+
+@media (max-width: 768px) {
+  .stats-section {
+    flex-direction: column;
+  }
+  .stat-box {
+    margin-bottom: 20px;
+  }
 }
